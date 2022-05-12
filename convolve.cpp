@@ -110,7 +110,7 @@ int main()
     printExecutionTime(end - start, "serial");
 
     start = omp_get_wtime();
-    serial.convolve();
+    parallel.convolve();
     end = omp_get_wtime();
     printExecutionTime(end - start, "parallel");
 
